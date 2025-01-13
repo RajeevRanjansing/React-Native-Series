@@ -1,1 +1,38 @@
+//Background change
+
+import React, { useState } from "react";
+import { SafeAreaView, Text, StyleSheet, Button } from "react-native";
+
+const App = () => {
+
+const [initial, final]=useState("white");
+
+const toggleColor=()=>{
+  const newColor=initial==="white"? "black":"white";
+  final(newColor);
+}
+
+  return (
+    <SafeAreaView style={[styles.container, { backgroundColor: initial }]}>
+      <Text style={styles.text}>Hello</Text>
+      <Button title="Change Bg-color" onPress={toggleColor} />
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    color: "red",
+    fontSize: 22,
+  },
+});
+
+export default App;
 
