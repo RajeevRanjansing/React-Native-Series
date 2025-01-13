@@ -1,1 +1,9 @@
+//Styling
+
+1.Inline Style
+2.Internal Style
+3.External style
+
+//we should mostly use External styling because jab bhi app render hota h to StyleSheet ek baar hi load hota hai.
+//Lekin jab hmlog Inline/Internal Styling dete hai to wo javscript object hota h, to wo baar baar load hota, isse app ka performance low ho jata h.
 
