@@ -1,0 +1,44 @@
+//Flex
+
+import React from "react";
+import {Text,View,StyleSheet} from "react-native";
+
+const App=()=>{
+  return(
+    <View style={styles.container}>
+    
+    <View style={styles.box1}></View>
+    <View style={styles.box2}></View>
+    <View style={styles.box3}></View>
+    
+    </View>
+
+  )
+}
+
+//box=1+2+3=6 means pura display 6 part me divide hoga. Box1 1/6 space lega, Box2 2/6 space lega, Box3 3/6 space lega.
+
+
+const styles=StyleSheet.create({
+  container:{
+    flex:1,
+    backgroundColor:"lightseagreen",
+  },
+  box1:{
+    flex:1,
+    backgroundColor:"yellow",
+
+  },
+  box2:{
+    flex:2,
+    backgroundColor:"red",
+
+  },
+  box3:{
+    flex:3,
+    backgroundColor:"pink",
+  }
+})
+
+export default App;
+
