@@ -1,4 +1,6 @@
-//Flex
+//Flex Property
+
+//Program 1
 
 import React from "react";
 import {Text,View,StyleSheet} from "react-native";
@@ -42,3 +44,53 @@ const styles=StyleSheet.create({
 
 export default App;
 
+
+
+-----------------------------------------------------------------------------------------------------
+//Program 2
+
+//display:flex, Justify-content:center, align-items:center
+
+
+//part 1
+
+import {Text,View,StyleSheet} from "react-native";
+
+const App=()=>{
+  return(
+    <View style={styles.container}>
+    <View style={styles.box1}></View>
+    <View style={styles.box2}></View>
+    <View style={styles.box3}></View>
+        
+    </View>
+    
+  )
+}
+
+const styles=StyleSheet.create({
+  container:{
+    flex:1,
+    backgroundColor:"black",
+    flexDirection:"row",
+  },
+  box1:{
+    height:80,
+    width:80,
+    backgroundColor:"red",
+    flexGrow:1, 		
+	//row me 3 box hai, baaki ka space hai jo row me,to jaise hi flexGrow:1 likhne se box1 baaki ka pura space le lega.
+  },
+  box2:{
+    height:80,
+    width:80,
+    backgroundColor:"yellow",
+  },
+  box3:{
+    height:80,
+    width:80,
+    backgroundColor:"green",
+  },
+})
+
+export default App;
