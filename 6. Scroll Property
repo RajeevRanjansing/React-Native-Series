@@ -1,4 +1,4 @@
-//scroll karane ke liye ScrollView/FlatList dono use hota h.
+//scroll karne ke liye ScrollView/FlatList dono use hota h.
 //scrolling horizontal/vertical
 
 import {Text,ScrollView,StyleSheet,View} from "react-native";
@@ -6,6 +6,7 @@ import {Text,ScrollView,StyleSheet,View} from "react-native";
 const App=()=>{
   return(
     <ScrollView vertical/horizontal style={styles.container}>
+
     <View style={styles.box1}></View>
     <View style={styles.box2}></View>
     <View style={styles.box3}></View>
@@ -20,7 +21,32 @@ const App=()=>{
     <View style={styles.box3}></View>
         
     </ScrollView>
-    
   )
 }
+
+const styles=StyleSheet.create({
+  container:{
+    flex:1,
+    backgroundColor:"black",
+    
+  },
+  box1:{
+    height:80,
+    width:80,
+    backgroundColor:"red",
+    
+  },
+  box2:{
+    height:80,
+    width:80,
+    backgroundColor:"yellow",
+  },
+  box3:{
+    height:80,
+    width:80,
+    backgroundColor:"green",
+  },
+})
+
+export default App;
 
