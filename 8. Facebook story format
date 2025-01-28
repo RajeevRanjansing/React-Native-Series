@@ -28,3 +28,30 @@ const App=()=>{
   )
 }
 
+const styles=StyleSheet.create({
+  container:{
+    backgroundColor:"black",
+  },
+
+  box1:{
+    height:170,
+    width:110,
+    backgroundColor:"red",
+  },
+
+  box2:{
+    height:170,
+    width:110,
+    backgroundColor:"yellow",    
+  },
+
+  box3:{
+    height:170,
+    width:110,
+    backgroundColor:"green",    
+  },
+})
+
+export default App;
+
+
