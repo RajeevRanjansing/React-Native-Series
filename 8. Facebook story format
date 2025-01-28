@@ -1,1 +1,30 @@
+8. Facebook stories format
+
+import {Text,ScrollView,StyleSheet,View} from "react-native";
+
+const App=()=>{
+  return(
+    <ScrollView
+    contentContainerStyle={{gap:10}} 
+    horizontal  style={styles.container}>
+    <View style={styles.box1}></View>
+    <View style={styles.box2}></View>
+    <View style={styles.box3}></View>
+    <View style={styles.box1}></View>
+    <View style={styles.box2}></View>
+    <View style={styles.box3}></View>
+    <View style={styles.box1}></View>
+    <View style={styles.box2}></View>
+    <View style={styles.box3}></View>
+    <View style={styles.box1}></View>
+    <View style={styles.box2}></View>
+    <View style={styles.box3}></View>
+    <View style={styles.box1}></View>
+    <View style={styles.box2}></View>
+    <View style={styles.box3}></View>
+        
+    </ScrollView>
+    
+  )
+}
 
