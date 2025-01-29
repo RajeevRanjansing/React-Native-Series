@@ -16,3 +16,16 @@ const App=()=>{
   )
 }
 
+const styles=StyleSheet.create({
+  card:{
+    height:200,
+    width:200,
+    backgroundColor:"lightseagreen",
+    color:"red",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center"
+
+  }
+})
+export default App; 
