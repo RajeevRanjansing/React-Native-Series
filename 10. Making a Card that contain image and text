@@ -1,1 +1,18 @@
+//Making a card that contain image and text
+
+import React from "react";
+import {Text,Image,View,StyleSheet} from "react-native";
+
+const App=()=>{
+  
+  return(
+    <View style={styles.card}>
+    <Image style={{height:100,width:100,borderRadius:50}} 
+    source={{uri: "https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg?cs=srgb&dl=clouds-conifer-daylight-371589.jpg&fm=jpg" }} />
+    <Text>Hii</Text>
+    <Text>Everyone</Text>
+  </View>
+
+  )
+}
 
