@@ -72,3 +72,30 @@ const App=()=>{
     },
   ]
 
+ return(
+    <View style={styles.container}>
+    <FlatList 
+    vertical/horizontal
+    data={user}
+    renderItem={({item})=>(
+      <View style={styles.card}>
+      <Image source={{uri:item.image}} style={{height:50,width:50,borderRadius:50}}/>
+      <Text style={styles.text}>{item.name}</Text>
+      <Text style={styles.text}>{item.id}</Text>
+      </View>
+    )}
+    ItemSeparatorComponent={<View style={{height:10}} />}		//horizontal me ye property use nhi karna h
+
+    numColumns={2}		//ye btata h ki ek row me kitna card rahega or horizontal me ye property use nhi karna h
+    
+    columnWrapperStyle={{justifyContent:"space-evenly"}}	
+    
+    //agar left side se margin chahiye to iska use karenge, justify-content ki  jagah gap:10 bhi use kar sakte h.
+    
+    />
+  </View>
+  )
+  
+}
+
+
