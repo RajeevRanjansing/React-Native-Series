@@ -1,1 +1,3 @@
-
+Q. When we have to use FlatList or ScrollView
+Ans= Agar hamare pass 10000 data h to agar hm scrollview ka use karenge to usme ek baar me data render hota h,
+to isse performance me kami aati hai, wahi agar FlatList me ek ek karke data render hota h,\. so,we have to FlatList.
