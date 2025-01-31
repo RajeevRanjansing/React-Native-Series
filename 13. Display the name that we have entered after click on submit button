@@ -21,3 +21,22 @@ const App=()=>{
     final("");
   }
 
+return(
+    <View>
+
+    <TextInput 
+    placeholder="Enter your name"
+    value={initial}
+    onChangeText={submit}
+
+    multiline   //This allow us to write multiple line
+    numberofLines={1}	//This will us to see one line and rest ......	
+     />
+     <Button title="SUBMIT" onPress={SUBMIT}></Button>
+    <Button title="clear" onPress={clear}></Button>
+     {init ?(<Text>Result: {init}</Text>):null}
+
+  </View>
+  )
+}
+export default App;
