@@ -1,1 +1,23 @@
+//Display the name that we have entered after click on submit button
+
+import React,{useState} from "react";
+import {Text,View,TextInput,Button} from "react-native";
+
+const App=()=>{
+
+  const [initial,final]=useState("");
+
+  const submit=(e)=>{
+      final(e)
+  }
+
+  const [init,fin]=useState("");
+
+  const SUBMIT=()=>{
+    fin(initial);
+  }
+
+  const clear=()=>{
+    final("");
+  }
 
